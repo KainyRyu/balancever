@@ -30,12 +30,13 @@ const Layout = ({ children }) => {
         style={{
           background: `linear-gradient(#ffbd9a, #a99aff 50%, #69b2d2 100%)`,
           color: `white`,
+          height: '95vh',
           margin: `0 auto`,
           maxWidth: 960,
         }}
       >
         <main>{children}</main>
-        <footer>
+        <footer style={{borderTop: 'white 1px solid'}}>
           © balancever 2020
         </footer>
       </div>

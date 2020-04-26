@@ -19,9 +19,9 @@ const Homepage = () => {
               work-life balance score.
             </p>
           </div>
-          <div className="sign-buttons">
-            <button>SIGN IN</button>
-            <button>SIGN UP</button>
+          <div>
+            <button className="sign-buttons">SIGN IN</button>
+            <button className="sign-buttons">SIGN UP</button>
           </div>
         </div>
         <div className="background-video-box">
