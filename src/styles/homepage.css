@@ -1,14 +1,24 @@
-.homepage_box {
+.homepage-box {
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
-.sign_button {
-  border: none;
+.home-sentences {
+  padding: 10%;
+}
+
+.sign-buttons {
+  background: white;
+  border-radius: 40px;
   display: block;
   margin: 20px auto;
-  width: 80%;
+  width: 70%;
+  padding: 10px;
+}
+
+.background-video {
+  width: 100%;
 }
 
 .background-video-overlay {

@@ -386,6 +386,9 @@ p {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
+a:visited{
+  text-decoration: none;
+}
 figure {
   margin-left: 0;
   margin-right: 0;

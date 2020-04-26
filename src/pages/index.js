@@ -3,13 +3,10 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import avatar from "../images/Exclusion_13.png"
-import base_bg from "../images/base_bg.svg"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-
     <button>SIGN IN</button>
     <svg class="Path_73" viewBox="0 0 216 50">
       <path
