@@ -28,16 +28,15 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
+          background: `linear-gradient(#ffbd9a, #a99aff 50%, #69b2d2 100%)`,
+          color: `white`,
           margin: `0 auto`,
           maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
         }}
       >
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          © balancever 2020
         </footer>
       </div>
     </>
