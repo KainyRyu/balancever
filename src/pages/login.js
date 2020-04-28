@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import firebase from "../utils/firebase";
+import firebase from "firebase";
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 import {
     Button,
@@ -24,22 +24,23 @@ const Login = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
-    // const uiConfig = {
-    //     signInFlow: "popup",
-    //     signInOptions: [
-    //         firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-    //         firebase.auth.FacebookAuthProvider.PROVIDER_ID
-    //     ],
-    //     callbacks: {
-    //         signInSuccess: () => false
-    //     }
-    // }
+    const uiConfig = {
+        signInFlow: "popup",
+        signInOptions: [
+            firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+            firebase.auth.EmailAuthProvider.PROVIDER_ID,
+            firebase.auth.FacebookAuthProvider.PROVIDER_ID
+        ],
+        callbacks: {
+            signInSuccess: () => false
+        }
+    }
 
-    // useEffect(() => {
-    //     firebase.auth().onAuthStateChanged(user => {
-    //         setSignedIn(!!user)
-    //     })
-    // }, [])
+    useEffect(() => {
+        firebase.auth().onAuthStateChanged(user => {
+            setSignedIn(!!user)
+        })
+    }, [])
 
     const handleLogin = e => {
         e.preventDefault()
@@ -131,10 +132,10 @@ const Login = () => {
                 <Link style={{color: 'white', textDecoration:'none', }}>Forgot Password?</Link>
             </div>
             <div style={{textAlign: 'center', margin: '20px'}}>Don't have an account? <SignUp>Sign Up</SignUp></div>
-            {/* <StyledFirebaseAuth
+            <StyledFirebaseAuth
                 uiConfig={uiConfig}
                 firebaseAuth={firebase.auth()}
-            /> */}
+            />
         </Layout>
     )
 }
