@@ -130,7 +130,7 @@ const Login = () => {
             <div style={{display: 'flex', justifyContent: 'center', margin: '20px'}}>
                 <Link style={{color: 'white', textDecoration:'none', }}>Forgot Password?</Link>
             </div>
-            <div style={{textAlign: 'center', margin: '20px'}}>Don't have an accout? <SignUp>Sign Up</SignUp></div>
+            <div style={{textAlign: 'center', margin: '20px'}}>Don't have an account? <SignUp>Sign Up</SignUp></div>
             {/* <StyledFirebaseAuth
                 uiConfig={uiConfig}
                 firebaseAuth={firebase.auth()}

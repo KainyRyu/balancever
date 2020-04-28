@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import backgroundVideo from "../images/Screenshot_2020_04_13_at_01_43.png"
@@ -20,8 +21,12 @@ const Homepage = () => {
             </p>
           </div>
           <div>
+          <Link to="/login">
             <button className="sign-buttons">SIGN IN</button>
+          </Link>
+          <Link to="/singup">
             <button className="sign-buttons">SIGN UP</button>
+          </Link>
           </div>
         </div>
         <div className="background-video-box">
