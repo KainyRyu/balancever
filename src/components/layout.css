@@ -1,5 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 html {
-  font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -40,6 +40,7 @@ template {
   display: none;
 }
 a {
+  color: white;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
@@ -200,7 +201,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;

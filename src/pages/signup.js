@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import firebase from "../utils/firebase";
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 import {
-    Button,
     FormConrol,
     FormControlLabel,
     InputLabel,
@@ -26,7 +24,6 @@ const SignUp = () => {
 
     const [name, setName] = useState("");
     const [phone, setPhone] = useState("");
-    const [address, setAddress] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
@@ -55,39 +52,8 @@ const SignUp = () => {
             <Typography component="h1" variant="h5" style={{textAlign: 'center'}}>CREATE ACCOUT</Typography>
             <Form className={classes.root}>
                 <ThemeProvider>
-                    {/* <TextField 
-                        className={classes.margin}
-                        label="First Name"
-                        type="text"
-                        variant="outlined"
-                        value={name}
-                        onChange={e => setName(e.target.value)}
-                        style={{
-                            border:'solid 2px white',
-                            borderRadius:'50px',
-                            padding: '0 20px',
-                            margin: '10px 10vw',
-                            width: '80vw',
-                        }}
-                    />
-                    <TextField 
-                        className={classes.margin}
-                        className="class.margin"
-                        label="Phone"
-                        type="number"
-                        value={phone}
-                        onChange={e => setPhone(e.target.value)}
-                        style={{
-                            border:'solid 2px white',
-                            borderRadius:'50px',
-                            padding: '0 20px',
-                            margin: '10px 10vw',
-                            width: '80vw',
-                        }}
-                    /> */}
                     <input 
                         className={classes.margin}
-                        className="class.margin"
                         label="Name"
                         type="text"
                         placeholder="Full Name"
@@ -105,7 +71,6 @@ const SignUp = () => {
                     />
                     <input 
                         className={classes.margin}
-                        className="class.margin"
                         label="Name"
                         type="text"
                         value={email}
@@ -123,7 +88,6 @@ const SignUp = () => {
                     />
                     <input 
                         className={classes.margin}
-                        className="class.margin"
                         label="Phone"
                         type="number"
                         placeholder="Phone"
@@ -190,11 +154,6 @@ const SignUp = () => {
                 </button>
             </Link>
             <div style={{textAlign: 'center', margin: '20px'}}>Already have an account? <Login>Sign In</Login></div>
-
-            {/* <StyledFirebaseAuth
-                uiConfig={uiConfig}
-                firebaseAuth={firebase.auth()}
-            /> */}
         </Layout>
     )
 }

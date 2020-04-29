@@ -26,19 +26,22 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          background: `linear-gradient(#ffbd9a, #a99aff 50%, #69b2d2 100%)`,
-          color: `white`,
-          height: '95vh',
-          margin: `0 auto`,
-          maxWidth: 960,
-        }}
-      >
-        <main>{children}</main>
-        <footer style={{borderTop: 'white 1px solid'}}>
-          © balancever 2020
-        </footer>
+      <div style={{background: `linear-gradient(#ffbd9a, #a99aff 50%, #69b2d2 100%)`,}}>
+
+        <div
+          style={{
+            background: `linear-gradient(#ffbd9a, #a99aff 50%, #69b2d2 100%)`,
+            color: `white`,
+            height: '100%',
+            margin: `0 auto`,
+            maxWidth: 960,
+          }}
+        >
+          <main>{children}</main>
+          <footer style={{borderTop: 'white 1px solid'}}>
+            © balancever 2020
+          </footer>
+        </div>
       </div>
     </>
   )
