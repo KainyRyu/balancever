@@ -42,72 +42,68 @@ const Menu = () => {
     return (
         <div style={{background:'#6188C9'}}>
             <SEO title="Menu" />
-            <MenuWrapper>
-
-                <CutOut></CutOut>
-                <MenuBar>
-                    <img 
-                        src={logo} 
-                        alt="logo"
-                        style={{
-                            width: '50%',
-                            marginTop:'30px'
-                        }}
-                    />
-                    <Button 
-                        className="sign-buttons" 
-                        variant="outlined"
-                        color="primary"
-                    >
-                        VIEW SCHEDULE
-                    </Button>
-                    <Button 
-                        className="sign-buttons" 
-                        variant="outlined"
-                        color="primary"
-                        style={{ 
-                        }}
-                    >
-                        EDIT SCHEDULE
-                    </Button>
-                    <Button 
-                        className="sign-buttons" 
-                        variant="outlined"
-                        color="primary"
-                        style={{ 
-                        }}
-                    >
-                        CHECK YOUR SCORE
-                    </Button>
-                    <Button 
-                        className="sign-buttons" 
-                        variant="outlined"
-                        color="primary"
-                        style={{ 
-                        }}
-                    >
-                        SHARE YOUR SCHEDULE
-                    </Button>
-                    <Button 
-                        className="sign-buttons" 
-                        variant="outlined"
-                        color="primary"
-                        style={{ 
-                            borderRadius: '25px',
-                            marginTop: '25px',
-                        }}
-                    >
-                        EXPLORE ACTIVITIES
-                    </Button>
-                    
-                    
-                    {/* <StyledFirebaseAuth
-                        uiConfig={uiConfig}
-                        firebaseAuth={firebase.auth()}
-                    /> */}
-                </MenuBar>
-            </MenuWrapper>
-            <div style={{background:'#6188C9', padding:'10% 0', height:'40vh', border:'none'}}>
+            <MenuBar>
+                <img 
+                    src={logo} 
+                    alt="logo"
+                    style={{
+                        width: '50%',
+                        marginTop:'30px'
+                    }}
+                />
+                <Button 
+                    className="sign-buttons" 
+                    variant="outlined"
+                    color="primary"
+                >
+                    VIEW SCHEDULE
+                </Button>
+                <Button 
+                    className="sign-buttons" 
+                    variant="outlined"
+                    color="primary"
+                    style={{ 
+                    }}
+                >
+                    EDIT SCHEDULE
+                </Button>
+                <Button 
+                    className="sign-buttons" 
+                    variant="outlined"
+                    color="primary"
+                    style={{ 
+                    }}
+                >
+                    CHECK YOUR SCORE
+                </Button>
+                <Button 
+                    className="sign-buttons" 
+                    variant="outlined"
+                    color="primary"
+                    style={{ 
+                    }}
+                >
+                    SHARE YOUR SCHEDULE
+                </Button>
+                <Button 
+                    className="sign-buttons" 
+                    variant="outlined"
+                    color="primary"
+                    style={{ 
+                        borderRadius: '25px',
+                        marginTop: '25px',
+                    }}
+                >
+                    EXPLORE ACTIVITIES
+                </Button>
+                
+                
+                {/* <StyledFirebaseAuth
+                    uiConfig={uiConfig}
+                    firebaseAuth={firebase.auth()}
+                /> */}
+            </MenuBar>
+            <div style={{background:'#6188C9', padding:'10% 0', height:'35vh', border:'none'}}>
                 <ul>
                     <List><Link to="/" style={{color: 'white', textDecoration:'none', }}>WHO WE ARE</Link></List>
                     <List><Link to="/" style={{color: 'white', textDecoration:'none', }}>TERMS</Link></List>
@@ -122,22 +118,11 @@ const Menu = () => {
     )
 }
 
-const MenuWrapper = styled.div`
-    position: relative;
-`
-const CutOut = styled.div` 
-    background: #6188C9;
-    border-radius: 50px;
-    height: 50px;
-    width: 100vw;
-    position: absolute;
-`
 const MenuBar = styled.div`
     display: block;
     background: linear-gradient(#ffbd9a, #a99aff 50%, #69b2d2 100%);
-    background: radial-gradient(150% 30% at bottom, transparent 50%, linear-gradient(#ffbd9a, #a99aff 50%, #69b2d2 100%));
-    boarder-radius: 10px/50px;
-    height: 60vh;
+    border-radius: 0 0 200px 200px / 50px ;
+    height: 65vh;
     width: 100vw;
     margin-bottom: 0;
 `
@@ -145,14 +130,14 @@ const MenuBar = styled.div`
 const Button = styled.button`
     border-radius: 25px;
     border-style: none;
-    margin-bottom: 30px;
+    margin-bottom: 5%;
     padding: 10px 0;
     width: 55vw;
 `
 
 const List = styled.li` 
     color: white;
-    margin: 30px 10px;
+    margin: 5% 10px;
     font-weight: 600;
 `
 
