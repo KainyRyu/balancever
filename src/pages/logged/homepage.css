@@ -1,0 +1,14 @@
+.homepage-button {
+    background: white;
+    border-radius: 50px;
+    border-style: none;
+    margin: 10px 15%;
+    padding: 20px;
+    width: 70%;
+    font-weight: 600;
+}
+
+.happening-soon{
+   margin: 5vw;
+   border-bottom: lightgray 1px solid;
+}
