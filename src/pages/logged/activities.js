@@ -80,14 +80,15 @@ const ActivityWrapper = styled.div`
 `
 
 const Activity = styled(Link)`
+  align-items: center;
   background: white;
   border-radius: 10px;
   color: black;
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 45vw;
+  justify-content: center;
   margin: 2vw;
+  opacity: 0.7;
   text-decoration: none;
   width: 45vw;
 `
