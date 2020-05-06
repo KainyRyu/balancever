@@ -1,33 +1,11 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import sudoku from "../../images/activity-sudoku.png"
-import cooking from "../../images/activity-cooking.png"
-import socialising from "../../images/activity-socialise.png"
-import museumTour from "../../images/activity-museum@2x.png"
 import "./homepage.css"
-
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
-import firebase from "firebase"
-import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"
-import { Button, TextField, Typography } from "@material-ui/core"
-import {
-  fade,
-  makeStyles,
-  createMuiTheme,
-  ThemeProvider,
-} from "@material-ui/core/styles"
-import { white } from "@material-ui/core/colors"
 
 const Homepage = () => {
-  const [signedIn, setSignedIn] = useState("")
-
-  useEffect(() => {
-    firebase.auth().onAuthStateChanged(user => {
-      setSignedIn(!!user)
-    })
-  }, [])
 
   return (
     <Main>
