@@ -24,7 +24,7 @@ const Homepage = () => {
           <Link to="/login">
             <button className="sign-buttons">SIGN IN</button>
           </Link>
-          <Link to="/singup">
+          <Link to="/signup">
             <button className="sign-buttons">SIGN UP</button>
           </Link>
           </div>
