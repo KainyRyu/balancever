@@ -1,0 +1,23 @@
+{
+    "balancever": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-balancever-balancever-81829-authRole",
+            "UnauthRoleArn": "arn:aws:iam::964491722910:role/amplify-balancever-balancever-81829-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::964491722910:role/amplify-balancever-balancever-81829-authRole",
+            "Region": "eu-central-1",
+            "DeploymentBucketName": "amplify-balancever-balancever-81829-deployment",
+            "UnauthRoleName": "amplify-balancever-balancever-81829-unauthRole",
+            "StackName": "amplify-balancever-balancever-81829",
+            "StackId": "arn:aws:cloudformation:eu-central-1:964491722910:stack/amplify-balancever-balancever-81829/9e554e50-9357-11ea-a952-060cd1f69c1a",
+            "AmplifyAppId": "ddqwin9qf1h7t"
+        },
+        "categories": {
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "ddqwin9qf1h7t",
+                    "type": "manual"
+                }
+            }
+        }
+    }
+}

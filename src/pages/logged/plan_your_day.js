@@ -27,12 +27,11 @@ const Edit = () => {
         <SEO title="Homepage" />
 
         <Form style={{ textAlign: `center` }}>
-          <h3 style={{ textAlign: `center` }}>PLAN YOUR DAY</h3>
+          <h3 style={{ textAlign: `center` }}>EDIT EVENT</h3>
           <TimeSettingWrapper>
             <span style={{padding: '15px 0', flex: '3'}}>Starts</span>
             <Time 
               type="time"
-              placeholder="00:00"
               required
             >
             </Time>
@@ -41,12 +40,11 @@ const Edit = () => {
             <span style={{padding: '15px 0', flex: '3'}}>Ends</span>
             <Time 
               type="time"
-              placeholder="00:00"
             >
             </Time>
           </TimeSettingWrapper>
           <TimeSettingWrapper>
-            <span style={{padding: '15px 0', flex: '3'}}>EXPECTED WORK HOUR</span>
+            <span style={{padding: '15px 0', flex: '3'}}>EXPECTED HOUR</span>
             <Time 
               type="time"
             ></Time>
